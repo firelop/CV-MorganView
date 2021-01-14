@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Stage découverte en vidéo</title>
+</head>
+<body>
+    <h1>Ce site nécessite le html5, javascript et les images. Internet Explorer 11 est pris en charge mais pas entièrement, l'accès y donc bloqué.</h1>
+    <p>Une fois activé veuillez actualiser</p>
+    <img src="https://www.audi.com/content/dam/ci/Fundamentals/Basics/Colours/03_Markenfarben_Elemente/Audi_Brandplattform_Colours_Element_01.jpg?imwidth=1200" alt="Vérification" height="50px">
+    <script>
+        function imageLoaded() {
+            window.location.href = "https://cv-morganview.firelop.repl.co/seconde.html"
+        }
+
+        document.addEventListener("DOMContentLoaded", (e) => {
+            window.imageElement = document.getElementsByTagName("img")[0];
+            window.imageElement.onready = imageLoaded();
+        });
+    </script>
+</body>
+</html>
